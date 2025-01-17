@@ -2,7 +2,7 @@ import products from './data.js';
 
 const container = document.querySelector('#products');
 
-const shoppingCart = [];
+const shoppingCart = localStorage.getItem("shoppingCart") ? JSON.parse(localStorage.getItem("shoppingCart")) : [];
 
 localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
 
@@ -34,11 +34,8 @@ products.forEach(product => {
     button.addEventListener('click', () => {
       const confirmation = window.confirm('¿Estás seguro de agregar este producto al carrito?');
       if (confirmation != false) {
-        shoppingCart.push(product); // Agregar producto al carrito
+        shoppingCart.push(product);
         localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
-        console.log('Producto agregado:', product);
-        console.log('Carrito:', shoppingCart);
-        console.log('Carrito:', localStorage.getItem("shoppingCart"));
       } else {
         return;
       }
