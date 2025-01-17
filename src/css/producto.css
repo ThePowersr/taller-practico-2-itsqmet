@@ -1,0 +1,33 @@
+body {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  background: url('https://i.blogs.es/224274/javascript-large-/1366_2000.jpg') no-repeat center center/cover;
+  color: white;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+footer {
+  background: #343a40;
+  color: white;
+  padding: 20px 0;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-card {
+  margin-bottom: 30px;
+}

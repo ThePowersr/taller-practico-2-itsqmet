@@ -1,0 +1,82 @@
+body {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  background: url('https://i.blogs.es/224274/javascript-large-/1366_2000.jpg') no-repeat center center/cover;
+  color: white;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+footer {
+  background: #343a40;
+  color: white;
+  padding: 20px 0;
+}
+
+.min-height-100 {
+  min-height: 100vh;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Tarjetas alargadas */
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  /* Borde semi-opaco */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  /* Espaciado entre las tarjetas */
+}
+
+/* Efecto hover */
+.product-card:hover {
+  transform: translateY(-5px);
+  /* Efecto al pasar el mouse */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  /* Sombras más intensas */
+}
+
+/* Imagen de la tarjeta */
+.product-card img {
+  width: 100%;
+  height: 200px;
+  /* Altura de la imagen */
+  object-fit: cover;
+  /* La imagen se ajusta sin deformarse */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Contenido de la tarjeta */
+.product-card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  /* Para ocupar todo el espacio disponible */
+}
+
+/* Estilo del botón */
+.btn-agregar {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agregar:hover {
+  background-color: #218838;
+}
